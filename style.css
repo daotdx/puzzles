@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #f8c200 0%, #f9d423 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.side{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 93%;
+    height: auto;
+    max-height: 90vh;
+}
+
+.container > h1 {
+    font-size: 36px;
+    color: #292929;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #e2c045;
+    color: #ffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f9d423;
+}
+
+.puzzle-container {
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.puzzle-container img {
+    width: 110px;
+}
+
+.puzzle {
+    display: grid;
+    width: 80px;
+    max-width: 25em;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 8em;
+}
+
+.puzzles {
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.user-info {
+    height: 110px;
+    width: 230px;
+    margin-left: 5px;
+}
+
+/* Profile card */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    background: #FDFEFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.top-icons i {
+    color: #080911;
+}
+
+.top-icons i:nth-of-type(1) {
+    float: left;
+}
+
+.top-icons i:nth-of-type(2),
+.top-icons i:nth-of-type(3) {
+    float: right;
+}
+
+.top-icons i:nth-of-type(3) {
+    padding-right: .8em;
+}
+
+.profile {
+    position: relative;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.profile:after {
+    width: 100%;
+    height: 1px;
+    content: ' ';
+    display: block;
+    margin-top: 1.3em;
+    background: #E9EFF6;
+}
+
+.profile .check {
+    position: absolute;
+    right: 5em;
+    bottom: 12.7em;
+}
+
+.profile .check i {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    background: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+}
+
+.profile .thumbnail {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    border-radius: 100%;
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#user-name {
+    color: #2D354A;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.t1{
+    font-size: 14px;
+    padding-bottom: .5em;
+}
+
+.box-dap-an{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-title {
+    margin-top: 26px;
+    width: 50%;
+}
+
+.box-button {
+    position: relative;
+    bottom: -39px;
+    width: 50%;
+}
+
+#user-level {
+    font-size: 14px;
+    padding-top: .5em;
+}
+
+.side .button-dap-an{
+    font-size: 13px;
+    padding: 8px 28px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #e2c045;
+    color: #ffff;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.description {
+    color: #080911;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+
+.btn {
+    color: #fff;
+    width: 100%;
+    max-width: 130px;
+    height: 42px;
+    outline: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px;
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+}
+
+/* Media query for iPhone 14 */
+@media screen and (max-width: 1170px) {
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .container > h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .puzzle {
+        grid-auto-rows: 6em;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    #user-name {
+        font-size: 18px;
+    }
+
+    #user-level {
+        font-size: 13px;
+    }
+
+    .btn {
+        width: 100%;
+        height: 38px;
+    }
+}

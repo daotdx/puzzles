@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Puzzle Game</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Sliding Puzzle</h1>
+
+            <div class="landing-page">
+                <button id="startButton">Bắt đầu</button>
+            </div>
+
+            <div class="puzzle-container" style="display: none;">
+                <div class="side">
+                    <div class="game-info">
+                        <div class="main-image"><img id="main-image" src="./images/main.jpg" alt=""></div>
+                    </div>
+                    <div class="user-info">
+                        <div class="wrapper">
+                            <div class="profile">
+                                <h2 id="user-name">Trần Đạo</h2>
+                                <div class="box-dap-an">
+                                    <div class="box-title">
+                                        <p class= "t1" id="user-level">Level: 19</p>
+                                        <p class= "t1" id="user-moves-count">Số lượt: 10</p>
+                                    </div>
+                                    <div class="box-button">
+                                        <button class="button-dap-an">Đáp án</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="puzzles"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
